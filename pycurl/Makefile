@@ -30,7 +30,7 @@ maintainer-clean: distclean
 dist sdist: distclean
 	$(PYTHON) setup.py sdist
 
-windist:
+windist: distclean
 	$(PYTHON) setup.py bdist_wininst
 
 .PHONY: all build test install install_lib clean distclean maintainer-clean dist sdist windist
