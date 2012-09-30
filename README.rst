@@ -34,7 +34,7 @@ Overview
 .. _`well supported`: http://curl.haxx.se/libcurl/features.html#support
 .. _`fast`: http://curl.haxx.se/libcurl/features.html#fast
 .. _`thoroughly documented`: http://curl.haxx.se/libcurl/features.html#docs
-.. _companies`: http://curl.haxx.se/docs/companies.html
+.. _companies: http://curl.haxx.se/docs/companies.html
 .. _applications: http://curl.haxx.se/libcurl/using/apps.html
 
 
