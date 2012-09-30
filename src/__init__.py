@@ -11,7 +11,7 @@ Python binging to c libcurl library.
 :license: LGPL/MIT, see COPYING2 and COPYING for more details.
 """
 
-__version__ = '7.20.0'
+__version__ = '7.20.0a1'
 __build__ = 0x072000
 __license__ = 'LGPL/MIT'
 
