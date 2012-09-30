@@ -25,6 +25,7 @@ except ImportError:
 
 from distutils.util import split_quoted
 
+
 __all__ = 'extension_params', 'ParamsPrinter'
 
 
