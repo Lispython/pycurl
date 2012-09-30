@@ -1,6 +1,10 @@
 PycCURL2: Python interface to libcurl
 =====================================
 
+
+.. image:: https://secure.travis-ci.org/Lispython/pycurl.png
+	   :target: https://secure.travis-ci.org/Lispython/pycurl
+
 PycURL2 is a fork from original `PycURL`_ library that no maintained from 7.19.0 (Sep 9 2008).
 
 PycURL2 is a Python interface to `libcurl`_. PycURL2 can be used to fetch objects
