@@ -59,7 +59,7 @@ extensions.append(pycurl2_ext)
 
 # Added test requirement
 tests_require = [
-    'nose==1.2.1',
+    'nose',
     'unittest2',
     'simplejson==2.6.2']
 

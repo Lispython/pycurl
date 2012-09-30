@@ -21,7 +21,7 @@ test:
 	python setup.py nosetests --stop --tests tests.py
 
 travis:
-	python setup.py nosetests --tests tests.py
+	python setup.py test
 
 # build-7.10.8:
 # 	$(PYTHON) setup.py build --curl-config=/home/hosts/localhost/packages/curl-7.10.8/bin/curl-config
