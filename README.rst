@@ -75,9 +75,6 @@ I faced with the problems of pycurl. Pycurl need more beautiful rst docs, clean 
 I try to solve this problems on my fork.
 
 
-.. include:: docs/source/TODO.rst
-
-
 License
 -------
 
