@@ -13,11 +13,16 @@ recursive-include docs *.txt *.py *.rst *.md
 recursive-include docs *
 recursive-exclude docs *.pyc
 recursive-exclude docs *.pyo
+recursive-include tests *.py
 recursive-exclude tests *.pyc
 recursive-exclude tests *.pyo
 recursive-include examples *.py
+recursive-include old_tests *.py
+recursive-exclude old_tests *.pyc
+recursive-include old_tests *.pyo
 include src/Makefile
 include src/pycurl.c
+include src/__init__.py
 include ChangeLog
 include COPYING
 include COPYING2
