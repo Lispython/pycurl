@@ -18,7 +18,8 @@ audit:
 	python setup.py autdit
 
 test:
-	python setup.py nosetests --stop --tests tests.py
+	python setup.py test
+#	python setup.py nosetests --stop --tests tests/__init__.py
 
 travis:
 	python setup.py test

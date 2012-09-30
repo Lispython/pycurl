@@ -16,7 +16,6 @@ Module that store utilites that help create setup
 import os
 import re
 import sys
-from optparse import OptionParser
 from subprocess import Popen, PIPE
 try:
     from setuptools import Command
@@ -30,16 +29,23 @@ __all__ = 'extension_params', 'ParamsPrinter'
 
 
 # Use optparse to parse options
-usage = "setup.py %s [options]" % ( sys.argv[1] if len(sys.argv) > 2 else '')
-option_parser = OptionParser(usage)
-option_parser.add_option('--curl-config', dest='curl_config', metavar="FILE")
-option_parser.add_option('--curl-dir', dest='curl_dir')
-option_parser.add_option('--openssl-dir', dest='openssl_dir')
-options, args = option_parser.parse_args()
+def parse_args():
+    options = {"curl_config": "curl-config",
+               "curl_dir": None,
+               "openssl_dir": None}
 
-curl_dir = options.curl_dir
-curl_config = options.curl_config or "curl-config"
-openssl_dir = options.openssl_dir
+    for option in options:
+        for arg in sys.argv[1:]:
+            if arg.startswith('--%s' % option.replace("_", "-")):
+                try:
+                    options[option] = arg.split("=")[1]
+                except IndexError:
+                    continue
+
+    return options['curl_dir'], options['curl_config'], options['openssl_dir']
+
+
+curl_dir, curl_config, openssl_dir = parse_args()
 
 def write_and_exit(lines):
     """Write error to stderr and exit
@@ -48,7 +54,7 @@ def write_and_exit(lines):
     """
     for line in lines:
         sys.stderr.write(line)
-        sys.stderr.srite("\n")
+        sys.stderr.write("\n")
     sys.exit(1)
 
 
@@ -214,7 +220,6 @@ class ParamsPrinter(Command):
     user_options = [('curl-config', None, "Curl config"),
                     ('curl-dir', None, "Curl directory"),
                     ('openssl-dir', None, "Curl openssl directory")]
-    #    user_options = ['curl-config', 'curl-dir', 'openssl-dir']
 
     def initialize_options(self):
         pass
