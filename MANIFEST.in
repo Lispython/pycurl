@@ -23,6 +23,7 @@ recursive-include old_tests *.pyo
 include src/Makefile
 include src/pycurl.c
 include src/__init__.py
+include *.py
 include ChangeLog
 include COPYING
 include COPYING2
