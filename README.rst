@@ -60,11 +60,15 @@ Contribute
 #. Write a test which shows that the bug was fixed or that the feature works as expected.
 #. Send a pull request and bug the maintainer until it gets merged and published.
 
+
 Why I start my own pycurl fork?
 -------------------------------
 Original pycurl last updated at version 7.19.0  on Sep 9 2008. Then I working on `human_curl`_ library,
 I faced with the problems of pycurl. Pycurl need more beautiful rst docs, clean examples, sources and package data.
 I try to solve this problems on my fork.
+
+
+.. include:: docs/source/TODO.rst
 
 
 License
@@ -83,7 +87,7 @@ included in the file COPYING2.  You can redistribute and/or modify PycURL
 according to the terms of either license.
 
 
-.. _PycURL2: http://pycurl.sourceforge.net/
+.. _PycURL: http://pycurl.sourceforge.net/
 .. _libcurl: http://curl.haxx.se/libcurl/
 .. _urllib: http://docs.python.org/library/urllib.html
 .. _`the repository`: https://github.com/Lispython/pycurl/

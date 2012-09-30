@@ -11,6 +11,7 @@ PycURL2 documentation
 .. toctree::
    :maxdepth: 2
 
+   install
    intro
    api
    callbacks
@@ -23,6 +24,7 @@ Additional Information
    :maxdepth: 2
 
    changelog
+   TODO
 
 Indices and tables
 ==================
