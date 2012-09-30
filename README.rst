@@ -41,9 +41,12 @@ Overview
 Installation
 ------------
 
-You can install the most recent PycURL2 version using `easy_install`_ or `pip`_::
+You can install the most recent PycURL2 version using `easy_install`_::
 
     easy_install pycurl2
+
+or `pip`_::
+
     pip install pycurl2
 
 
@@ -74,9 +77,9 @@ I try to solve this problems on my fork.
 License
 -------
 
-Copyright (C) 2001-2008 Kjetil Jacobsen
-Copyright (C) 2001-2008 Markus F.X.J. Oberhumer
-Copyrught (C) 2012 Alexandr Lispython
+- Copyright (C) 2001-2008 Kjetil Jacobsen
+- Copyright (C) 2001-2008 Markus F.X.J. Oberhumer
+- Copyrught (C) 2012 Alexandr Lispython
 
 All rights reserved.
 
