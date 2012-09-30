@@ -61,7 +61,7 @@ extensions.append(pycurl2_ext)
 tests_require = [
     'nose',
     'unittest2',
-    'simplejson==2.6.2']
+    'simplejson']
 
 try:
     readme_content = open(os.path.join(os.path.abspath(
