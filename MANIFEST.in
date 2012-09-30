@@ -1,0 +1,24 @@
+#
+# MANIFEST.in
+# Manifest template for creating the source distribution.
+#
+
+
+# exclude unfinished test scripts
+#exclude tests/test_multi_vs_thread.py
+
+
+include *.txt *.md *.rst Makefile
+recursive-include docs *.txt *.py *.rst *.md
+recursive-include docs *
+recursive-exclude docs *.pyc
+recursive-exclude docs *.pyo
+recursive-exclude tests *.pyc
+recursive-exclude tests *.pyo
+recursive-include examples *.py
+include src/Makefile
+include src/pycurl.c
+include ChangeLog
+include COPYING
+include COPYING2
+include MANIFEST.in
