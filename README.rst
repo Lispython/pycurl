@@ -83,7 +83,7 @@ License
 
 - Copyright (C) 2001-2008 Kjetil Jacobsen
 - Copyright (C) 2001-2008 Markus F.X.J. Oberhumer
-- Copyrught (C) 2012 Alexandr Lispython
+- Copyright (C) 2012 Alexandr Lispython
 
 All rights reserved.
 
