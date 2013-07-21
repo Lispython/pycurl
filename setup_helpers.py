@@ -162,7 +162,7 @@ def make_windows_params(params):
     :return: updated params_dict
     """
 
-    if not options.curl_dir:
+    if not curl_dir:
         write_and_exit(['You need specify --curl-dir argument'])
 
     sys.stdout.write("Using curl directory: %s" % curl_dir)
