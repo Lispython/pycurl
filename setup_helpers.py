@@ -120,9 +120,10 @@ def make_posix_params(params):
     for option in ["--libs", "--static-libs"]:
         p = Popen("'%s' %s" % (curl_config, option), shell=True,
             stdout=PIPE)
-        (stdout, stderr) = p.communicate()
+        (optbuf, stderr) = p.communicate()
         if p.wait() == 0:
-            optbuf += stdout
+            break
+
     if not optbuf:
         write_and_exit(['Neither of curl-config --libs or --static-libs produced output'])
 
