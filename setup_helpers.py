@@ -39,6 +39,7 @@ def parse_args():
             if arg.startswith('--%s' % option.replace("_", "-")):
                 try:
                     options[option] = arg.split("=")[1]
+                    sys.argv.remove(arg)
                 except IndexError:
                     continue
 
